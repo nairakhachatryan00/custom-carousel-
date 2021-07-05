@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <img class="p-3" width="600px" height="600px" [src]=mainImage>
+    </div>
+    <app-carousel [items]=items (mainImageChanged)="onMainImageChanged($event)"></app-carousel>
+  </div>
+</div>

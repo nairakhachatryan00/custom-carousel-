@@ -1,0 +1,11 @@
+<div class="row col-12">
+  <div class="slide col text-center" (click)="onSlideChanged('left')">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+  </div>
+  <div class="col text-center" *ngFor="let item of visibleItems" (click)="onMainImageChanged(item)">
+    <img class="p-3" [src]=item  width="200px" height="200px">
+  </div>
+  <div class="slide col text-center">
+    <i class="fas fa-arrow-right" (click)="onSlideChanged('right')"></i>
+  </div>
+</div>
